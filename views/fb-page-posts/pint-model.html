@@ -1,0 +1,74 @@
+<div class="modal fade" id="pint-img-show">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Thêm nội dung từ Pinterest</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="img-list">
+                </div>
+                <div id="contents-list">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Với mỗi hình ảnh sẽ lấy random 1 dòng trong nhóm nội dung trong khi đăng bài</h3>
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                          <div class="form-group">
+          									<div style="margin-top: 10px;">
+          										<label for="message-name" class="col-form-label">Shop:</label>
+          										<input type="text" class="" id="input-shop-id">
+          									</div>
+          								</div>
+                          </div>
+                            <!-- Minimal style -->
+                            <div class="add-select-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="create-post" class="text-center p-t-1 p-b-20">
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" id="btn-pint-select-texts">Chọn Text</button>
+                <button type="button" class="btn btn-primary" id="btn-pint-render-contents">Tạo các bài viết</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<div id="image-base" hidden>
+    <div class="img-block">
+        <span class="delete-img"> xóa</span>
+        <img class="pint-img" src="#" style="width:120px;height:120px">
+    </div>
+</div>
+<div id="checkbox-base" hidden>
+    <div class="form-group clearfix">
+        <div class="icheck-primary d-inline">
+            <input type="checkbox" id="cb-id" name="cb-name">
+            <label for="checkboxPrimary1">
+                Like
+            </label>
+        </div>
+    </div>
+</div>
+<div id="radio-base" hidden>
+    <div class="form-group clearfix">
+         <div class="icheck-primary d-inline">
+             <input type="radio" id="radio-page" name="page-selected">
+             <label for="radioPrimary1"> </label>
+         </div>
+     </div>
+</div>
+<div id="loading-form" class="text-center" hidden>
+    <div class="spinner-border" role="status">
+    </div>
+</div>

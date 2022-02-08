@@ -1,0 +1,54 @@
+<div class="modal fade bd-example-modal-lg" id="create-edit-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sửa bài viết Pages</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="form-content">
+          <input type="hidden" name="input-id" value="" id="input-id">
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Trang:</label>
+            <select class="custom-select mr-sm-2" id="input-page"></select>
+          </div>
+          <div class="form-group show-image">
+            <label for="message-name" class="col-form-label">Ảnh:</label>
+            <div id="image-edit-base" hidden>
+              <img src="#" style="width:120px;height:120px;margin-bottom:10px">
+            </div>
+            <div id="area-image-edit">
+
+            </div>
+              <textarea type="text" class="form-control" id="input-image" rows="4"></textarea>
+          </div>
+          <div class="form-group">
+            <div style="margin-top: 10px;">
+              <label for="message-name" class="col-form-label">Chủ đề:</label>
+              <select class="custom-select mr-sm-2" id="input-theme"></select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div style="margin-top: 10px;">
+              <label for="message-name" class="col-form-label">Chọn mẫu nội dung:</label>
+              <select class="custom-select mr-sm-2" id="input-content"></select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div style="margin-top: 10px;">
+              <label for="message-name" class="col-form-label">Nội dung:</label>
+              <textarea type="text" class="form-control" id="input-content-exceptions" rows="4"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+        <button type="button" id="btn-store" class="btn btn-primary">Tạo</button>
+        <button type="button" id="btn-update" class="btn btn-primary">Cập nhật</button>
+      </div>
+    </div>
+  </div>
+</div>
