@@ -19090,7 +19090,12 @@ global.intRandom = function (min, max) {
 };
 
 global.extPageType = null;
-global.extensionUrl = chrome.runtime.getURL;
+
+try {
+  global.extensionUrl = chrome.runtime.getURL;
+} catch (_unused) {}
+
+;
 Object.defineProperty(Object.prototype, 'toClone', {
   value: function value() {
     return _objectSpread({}, this);
